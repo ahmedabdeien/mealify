@@ -1,0 +1,153 @@
+/* ===========================| section one |============================= */
+body:has(.section-two:target) .home-link,
+body:has(.section-three:target) .Chefs-link,
+body:has(.section-four:target) .Gallery-link,
+body:has(.section-five:target) .Contact-link {
+  border-bottom: #ce1212 solid 2px;
+  color: white;
+}
+.child-mealify {
+  width: 85%;
+}
+.reload::after {
+  background-color: #ce1212;
+}
+.reload:hover {
+  color: rgb(255, 255, 255);
+}
+.li-1 {
+  display: block;
+  color: aliceblue;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.la-check {
+  display: block;
+  position: relative;
+  z-index: 9;
+  order: 2;
+  cursor: pointer;
+}
+
+.la-check i {
+  font-size: 1.4rem;
+}
+nav {
+  width: 50%;
+  height: 100vh;
+  border-left: solid 1px rgba(194, 194, 194, 0.333);
+  position: absolute;
+  top: 0;
+  right: -101%;
+  display: flex;
+  box-shadow: var(--drop-shadow);
+  z-index: 999999;
+  transition: all 0.4s;
+}
+
+.checkbox:checked ~ nav {
+  background-color: var(--bg-color-light-grey);
+  position: absolute;
+  right: 0%;
+}
+
+.section-one nav ul {
+  width: 80%;
+  height: 31%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.d-mode {
+  position: absolute;
+  right: 12%;
+  width: 1rem;
+}
+
+/* ===========================| section two |============================= */
+.section-two {
+  height: auto;
+  padding-top: 65px;
+}
+.Enjoy-all {
+  text-align: center;
+  height: auto;
+  padding-top: 70px;
+  flex-wrap: wrap-reverse;
+  width: 85%;
+}
+.Enjoy-text {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.Enjoy-imges {
+  width: 100%;
+}
+.child-but {
+  justify-content: center;
+}
+/* ===========================| section two |============================= */
+.card-Proffesional {
+  width: 48%;
+  margin-bottom: 30px;
+}
+.card-chefs {
+  width: var(--width-default);
+}
+
+/* ===========================| section four |============================= */
+.items-four {
+  width: var(--width-default);
+}
+.items-four {
+  columns: 2;
+}
+
+/* ===========================| section five |============================= */
+.container {
+  width: var(--width-default);
+}
+.box-content {
+  width: 49%;
+  padding: 20px 5px 20px 20px;
+}
+.box-content-icon {
+  width: 15%;
+}
+.box-content-text {
+  width: 80%;
+  height: 100%;
+}
+.box-content-text h3 {
+  padding-left: 0.5rem;
+}
+.box-content-text p {
+  padding-left: 0.5rem;
+}
+.nameandmail {
+  padding: 0px 15px;
+}
+.nameandmail input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* ===========================| section six |============================= */
+.footer-parents {
+  width: var(--width-default);
+}
+
+.footer-child {
+  width: 50%;
+}
+.footer-child-large {
+  width: 100%;
+  order: 1;
+}
+.footer-child-m {
+  width: 50%;
+}
